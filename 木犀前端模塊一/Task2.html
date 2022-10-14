@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2</title>
+    <style>.box{
+        width: 100vw;
+        height: 100vh;
+      }
+      .content{
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+      }</style>
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <form action="./index.py" method="post" enctype="multipart/form-data">
+                头像：<input type="file" name="file"><br><br>
+                昵称：<input type="text" name="username" value="" placeholder="请输入昵称"><br><br>
+                学历：
+                <select name="add" id="">
+                <option value="d" selected>大专</option>
+                <option value="b">本科</option>
+                </select><br><br>
+                性別：<input type="radio" name="sex" value="1" checked>男
+                  <input type="radio" name="sex" value="0">女
+                <br><br>
+                爱好：<input type="checkbox" name="like[]" value="f" checked>电影
+                  <input type="checkbox" name="like[]" value="b">摄影
+                  <input type="checkbox" name="like[]" value="l">音乐
+                  <input type="checkbox" name="like[]" value="l">阅读                
+                <br><br>
+                签名：<br>
+                <textarea name="in" id="" cols="45" rows="5"></textarea>
+                <br><br>
+                <input type="submit" value="保存">
+                </form>
+        </div>
+    </div>
+</body>
+</html>

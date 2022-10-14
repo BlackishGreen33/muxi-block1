@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>Task4-1</title>
+    <style>
+        .wrapper {
+            display: flex;  
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center; 
+        }
+        .wrapper > * {
+            padding: 10px;
+            flex: 1 100%;
+        }
+        .header {
+            background: tomato;
+        }
+        .aside-1 {
+            background: gold;
+            flex: 1;
+            order: 1;
+        }
+        .main {
+            text-align: left;
+            background: deepskyblue;
+            flex: 3;
+            order: 2;
+        }
+        .aside-2 {
+            background: hotpink;
+            flex: 1;
+            order: 3;
+        }
+        .footer {
+            background: lightgreen;
+            order: 4;
+        }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">Header</header>
+        <article class="main">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+        </article>
+        <aside class="aside aside-1">Aside 1</aside>
+        <aside class="aside aside-2">Aside 2</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

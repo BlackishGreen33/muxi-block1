@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Task5</title>
+        <style>
+            .box{
+                background-color: #ccc;
+                height: 300px;
+                width: 700px;
+            }
+            .a {
+                position: relative;
+                width: 100px;
+                height: 100px;
+            }
+            .a::after {
+                content: "";
+                position: absolute;
+                border: solid #fc0;
+                border-width: 100px 100px 0 0;
+                border-bottom-right-radius: 100px;
+            }
+            .b {
+                position: relative;
+                width: 100px;
+                height: 100px;
+            }
+
+            .b::after {
+                content: "";
+                position: absolute;
+                top: 100px;
+                left: 600px;
+                border: solid #fc0;
+                border-width: 100px 100px 0 0;
+                border-top-left-radius: 100px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="a"></div>
+            <div class="b"></div>
+        </div>
+    </body>
+</html>
